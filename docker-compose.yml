@@ -1,0 +1,14 @@
+version: '2'
+volumes:
+  dot-config:
+  dot-local:
+services:
+  steamlink:
+    restart: always
+    build: .
+    privileged: true
+    labels:
+      io.balena.features.dbus: '1'
+    volumes:
+      - 'dot-config:/root/.config'
+      - 'dot-local:/root/.local'
