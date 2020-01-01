@@ -8,8 +8,10 @@ echo "Starting X in 2 seconds"
 sleep 2
 startx
 
-# while :
-# do
-# 	echo "startx failed, so we will just wait here while you debug!"
-# 	sleep 30
-# done
+if [[ "${DEBUG}" == '1' ]]; then
+	while :
+	do
+		echo "startx failed, so we will just wait here while you debug!"
+		sleep 30
+	done
+fi
