@@ -9,6 +9,7 @@ services:
     privileged: true
     labels:
       io.balena.features.dbus: '1'
+      io.balena.features.kernel-modules: '1'
     volumes:
       - 'dot-config:/root/.config'
       - 'dot-local:/root/.local'
