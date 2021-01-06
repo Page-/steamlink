@@ -3,31 +3,52 @@ FROM balenalib/raspberrypi3-debian:buster
 WORKDIR /root
 ENV UDEV=1
 
-RUN install_packages \
+RUN apt-get update && apt-get upgrade && install_packages \
 	steamlink \
 	# steamlink deps, installing them manually stops steamlink
 	# trying to interactively install them on first start
-	libbsd0 \
-	libdbus-1-3 \
-	libevdev2 \
-	libfontconfig1 \
-	libfreetype6 \
-	libglib2.0-0 \
-	libgudev-1.0-0 \
-	libinput10 \
-	libjpeg62-turbo \
-	libmtdev1 \
-	libpng16-16 \
-	libwacom2 \
-	libx11-6 \
-	libx11-xcb1 \
-	libxau6 \
-	libxcb1 \
-	libxcb-xkb1 \
-	libxdmcp6 \
-	libxext6 \
-	libxkbcommon0 \
-	libxkbcommon-x11-0 \
+	cec-utils \
+	openssl \
+	libblkid1:armhf \
+	libbsd0:armhf \
+	libc6:armhf \
+	libdbus-1-3:armhf \
+	libevdev2:armhf \
+	libexpat1:armhf \
+	libffi6:armhf \
+	libfontconfig1:armhf \
+	libfreetype6:armhf \
+	libgcc1:armhf \
+	libgcrypt20:armhf \
+	libglib2.0-0:armhf \
+	libgpg-error0:armhf \
+	libgudev-1.0-0:armhf \
+	libinput10:armhf \
+	libjpeg62-turbo:armhf \
+	liblz4-1:armhf \
+	liblzma5:armhf \
+	libmount1:armhf \
+	libmtdev1:armhf \
+	libpcre3:armhf \
+	libpng16-16:armhf \
+	libraspberrypi0:armhf \
+	libselinux1:armhf \
+	libstdc++6:armhf \
+	libsystemd0:armhf \
+	libudev1:armhf \
+	libusb-1.0-0:armhf \
+	libuuid1:armhf \
+	libwacom2:armhf \
+	libx11-6:armhf \
+	libx11-xcb1:armhf \
+	libxau6:armhf \
+	libxcb-xkb1:armhf \
+	libxcb1:armhf \
+	libxdmcp6:armhf \
+	libxext6:armhf \
+	libxkbcommon-x11-0:armhf \
+	libxkbcommon0:armhf \
+	zlib1g:armhf \
 	# steamlink deps it doesn't list
 	xterm \
 	zenity \
