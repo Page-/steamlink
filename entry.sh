@@ -2,6 +2,7 @@
 
 rm /tmp/.X0-lock &>/dev/null || true
 
+mkdir -p ~/.local/share/SteamLink/
 touch ~/.local/share/SteamLink/.ignore_cpuinfo
 
 export DISPLAY=:0
