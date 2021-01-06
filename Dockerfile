@@ -70,7 +70,7 @@ RUN apt-get update && apt-get upgrade && install_packages \
 RUN echo "#!/bin/bash" > /etc/X11/xinit/xserverrc \
   && echo 'exec /usr/bin/X -s 0 dpms -nolisten tcp "$@"' >> /etc/X11/xinit/xserverrc
 
-COPY entry.sh .xinitrc ./
+COPY disable-read-line.sh entry.sh .xinitrc ./
 
 
 CMD ["/bin/bash", "/root/entry.sh"]
