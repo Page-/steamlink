@@ -12,7 +12,10 @@ You can one-click-deploy this project to balena using the button below:
 
 Alternatively, deployment can be carried out by manually creating a [balenaCloud account](https://dashboard.balena-cloud.com) and application, flashing a device, downloading the project and pushing it via either Git or the [balena CLI](https://github.com/balena-io/balena-cli).
 
-### Environment Variables
+
+## Device Variables
+
+### Environment Variables
 
 * RESIN_HOST_CONFIG_disable_overscan = 1 - used to avoid overscan on TVs (you also need to disable overscan or enable "just scan" on the TV)
 * RESIN_HOST_CONFIG_gpu_mem = 128 - increase gpu memory since the primary purpose of the steamlink is to stream video, not sure on the best value but 128 has worked for me
