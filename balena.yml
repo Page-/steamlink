@@ -1,0 +1,15 @@
+version: "2"
+slug: "steamlink"
+name: "steamlink"
+type: "sw.application"
+assets:
+  - url: "https://github.com/Page-/steamlink"
+    name: "repository"
+  - url: "https://raw.githubusercontent.com/Page-/steamlink/main/logo.png"
+    name: "logo"
+data:
+  description: "Run steamlink on a Raspberry Pi and play!"
+  defaultDeviceType: "raspberrypi4-64"
+  supportedDeviceTypes:
+    - "raspberrypi3-64"
+    
