@@ -4,7 +4,7 @@ Run steamlink on a Raspberry Pi using [balena.io](https://www.balena.io/)
 
 ## Getting started 
 
-You can one-click-deploy this project to balena using the button below:
+You can one-click-deploy this project to [balena.io](https://www.balena.io/) using the button below:
 
 [![deploy button](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/Page-/steamlink&defaultDeviceType=raspberrypi3)
 
